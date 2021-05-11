@@ -1,26 +1,41 @@
 .container {
+    height: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.kotak {
+.kotakGrid {
     width: 480px;
     height: 480px;
     border-style: solid;
     border-width: 2px;
     display: grid;
-    grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-columns: repeat(8, 60px);
+    /* grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px; */
 }
 .white {
+    width: 60px;
+    height: 60px;
     background-color: white;
 }
 .white:hover{
     background-color: red;
 }
 .black {
+    width: 60px;
+    height: 60px;
     background-color: black;
 }
 .black:hover{
     background-color: blue;
+}
+.kotakFlex {
+    width: 480px;
+    height: 480px;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
