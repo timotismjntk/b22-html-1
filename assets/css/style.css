@@ -1,9 +1,8 @@
 .container {
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .kotakGrid {
     width: 480px;
@@ -12,6 +11,7 @@
     border-width: 2px;
     display: grid;
     grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
     /* grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px; */
 }
 .white {
@@ -38,4 +38,174 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+.pseudoClass-flex {
+    width: 480px;
+    height: 480px;
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.pseudoClass-flex div:nth-child(n+1):nth-child(odd):nth-child(-n+8),
+.pseudoClass-flex div:nth-child(n+9):nth-child(even):nth-child(-n+16),
+.pseudoClass-flex div:nth-child(n+17):nth-child(odd):nth-child(-n+24),
+.pseudoClass-flex div:nth-child(n+25):nth-child(even):nth-child(-n+32),
+.pseudoClass-flex div:nth-child(n+33):nth-child(odd):nth-child(-n+40),
+.pseudoClass-flex div:nth-child(n+41):nth-child(even):nth-child(-n+48),
+.pseudoClass-flex div:nth-child(n+49):nth-child(odd):nth-child(-n+56),
+.pseudoClass-flex div:nth-child(n+57):nth-child(even):nth-child(-n+64) {
+    width: 60px;
+    height: 60px;
+    background-color: black;
+}
+.pseudoClass-flex div {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+}
+.pseudoClass-flex div:nth-child(n+1):nth-child(odd):nth-child(-n+8):hover,
+.pseudoClass-flex div:nth-child(n+9):nth-child(even):nth-child(-n+16):hover,
+.pseudoClass-flex div:nth-child(n+17):nth-child(odd):nth-child(-n+24):hover,
+.pseudoClass-flex div:nth-child(n+25):nth-child(even):nth-child(-n+32):hover,
+.pseudoClass-flex div:nth-child(n+33):nth-child(odd):nth-child(-n+40):hover,
+.pseudoClass-flex div:nth-child(n+41):nth-child(even):nth-child(-n+48):hover,
+.pseudoClass-flex div:nth-child(n+49):nth-child(odd):nth-child(-n+56):hover,
+.pseudoClass-flex div:nth-child(n+57):nth-child(even):nth-child(-n+64):hover {
+    background-color: red;
+}
+.pseudoClass-flex div:hover {
+    background-color: blue;
+}
+
+.pseudoClass-grid {
+    width: 480px;
+    height: 480px;
+    border-style: solid;
+    border-width: 2px;
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+}
+
+.pseudoClass-grid div {
+    background-color: white;
+}
+
+.pseudoClass-grid.buahCatur div {
+    background-color: white;
+}
+
+.pseudoClass-grid div:nth-child(n+1):nth-child(odd):nth-child(-n+8),
+.pseudoClass-grid div:nth-child(n+9):nth-child(even):nth-child(-n+16),
+.pseudoClass-grid div:nth-child(n+17):nth-child(odd):nth-child(-n+24),
+.pseudoClass-grid div:nth-child(n+25):nth-child(even):nth-child(-n+32),
+.pseudoClass-grid div:nth-child(n+33):nth-child(odd):nth-child(-n+40),
+.pseudoClass-grid div:nth-child(n+41):nth-child(even):nth-child(-n+48),
+.pseudoClass-grid div:nth-child(n+49):nth-child(odd):nth-child(-n+56),
+.pseudoClass-grid div:nth-child(n+57):nth-child(even):nth-child(-n+64) {
+    background-color: black;
+}
+.pseudoClass-grid.buahCatur div:nth-child(n+1):nth-child(odd):nth-child(-n+8),
+.pseudoClass-grid.buahCatur div:nth-child(n+9):nth-child(even):nth-child(-n+16),
+.pseudoClass-grid.buahCatur div:nth-child(n+17):nth-child(odd):nth-child(-n+24),
+.pseudoClass-grid.buahCatur div:nth-child(n+25):nth-child(even):nth-child(-n+32),
+.pseudoClass-grid.buahCatur div:nth-child(n+33):nth-child(odd):nth-child(-n+40),
+.pseudoClass-grid.buahCatur div:nth-child(n+41):nth-child(even):nth-child(-n+48),
+.pseudoClass-grid.buahCatur div:nth-child(n+49):nth-child(odd):nth-child(-n+56),
+.pseudoClass-grid.buahCatur div:nth-child(n+57):nth-child(even):nth-child(-n+64) {
+    background-color: grey;
+}
+.pseudoClass-grid div:nth-child(n+1):nth-child(odd):nth-child(-n+8):hover,
+.pseudoClass-grid div:nth-child(n+9):nth-child(even):nth-child(-n+16):hover,
+.pseudoClass-grid div:nth-child(n+17):nth-child(odd):nth-child(-n+24):hover,
+.pseudoClass-grid div:nth-child(n+25):nth-child(even):nth-child(-n+32):hover,
+.pseudoClass-grid div:nth-child(n+33):nth-child(odd):nth-child(-n+40):hover,
+.pseudoClass-grid div:nth-child(n+41):nth-child(even):nth-child(-n+48):hover,
+.pseudoClass-grid div:nth-child(n+49):nth-child(odd):nth-child(-n+56):hover,
+.pseudoClass-grid div:nth-child(n+57):nth-child(even):nth-child(-n+64):hover {
+    background-color: red;
+}
+.pseudoClass-grid div:hover {
+    background-color: blue;
+}
+
+
+/* buah catur warna hitam */
+.buahCatur div:nth-child(n+9):nth-child(-n+16)::before {
+    display: flex;
+    justify-content: center;
+    content: '\265F';
+    font-size: 44px;
+}
+
+.buahCatur div:nth-child(1):before, .buahCatur div:nth-child(8):before {
+    display: flex;
+    justify-content: center;
+    content: '\265C';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(2):before, .buahCatur div:nth-child(7):before {
+    display: flex;
+    justify-content: center;
+    content: '\265E';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(3):before, .buahCatur div:nth-child(6):before {
+    display: flex;
+    justify-content: center;
+    content: '\265D';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(4):before {
+    display: flex;
+    justify-content: center;
+    content: '\265B';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(5):before {
+    display: flex;
+    justify-content: center;
+    content: '\265A';
+    font-size: 44px;
+}
+
+.buahCatur div:nth-child(n+49):nth-child(-n+56)::before {
+    display: flex;
+    justify-content: center;
+    content: '\2659';
+    font-size: 44px;
+}
+
+/* buah catur warna putih */
+.buahCatur div:nth-child(57):before, .buahCatur div:nth-child(64):before {
+    display: flex;
+    justify-content: center;
+    content: '\2656';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(58):before, .buahCatur div:nth-child(63):before {
+    display: flex;
+    justify-content: center;
+    content: '\2658';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(59):before, .buahCatur div:nth-child(62):before {
+    display: flex;
+    justify-content: center;
+    content: '\2657';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(60):before {
+    display: flex;
+    justify-content: center;
+    content: '\2655';
+    font-size: 44px;
+}
+.buahCatur div:nth-child(61):before {
+    display: flex;
+    justify-content: center;
+    content: '\2654';
+    font-size: 44px;
 }
