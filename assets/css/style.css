@@ -132,80 +132,50 @@
 }
 
 
+.buahCatur div {
+    display: flex;
+    justify-content: center;
+    font-size: 44px;
+}
+
 /* buah catur warna hitam */
-.buahCatur div:nth-child(n+9):nth-child(-n+16)::before {
-    display: flex;
-    justify-content: center;
-    content: '\265F';
-    font-size: 44px;
-}
-
-.buahCatur div:nth-child(1):before, .buahCatur div:nth-child(8):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .benteng-hitam:before {
     content: '\265C';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(2):before, .buahCatur div:nth-child(7):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .kuda-hitam::before {
     content: '\265E';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(3):before, .buahCatur div:nth-child(6):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .gajah-hitam::before {
     content: '\265D';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(4):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .menteri-hitam::before {
     content: '\265B';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(5):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .raja-hitam::before {
     content: '\265A';
-    font-size: 44px;
+}
+.buahCatur .pion-hitam::before {
+    content: '\265F';
 }
 
-.buahCatur div:nth-child(n+49):nth-child(-n+56)::before {
-    display: flex;
-    justify-content: center;
-    content: '\2659';
-    font-size: 44px;
-}
 
 /* buah catur warna putih */
-.buahCatur div:nth-child(57):before, .buahCatur div:nth-child(64):before {
-    display: flex;
-    justify-content: center;
+
+.buahCatur .pion-putih::before {
+    content: '\2659';
+}
+.buahCatur .benteng-putih::before {
     content: '\2656';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(58):before, .buahCatur div:nth-child(63):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .kuda-putih::before {
     content: '\2658';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(59):before, .buahCatur div:nth-child(62):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .gajah-putih:before {
     content: '\2657';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(60):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .menteri-putih::before {
     content: '\2655';
-    font-size: 44px;
 }
-.buahCatur div:nth-child(61):before {
-    display: flex;
-    justify-content: center;
+.buahCatur .raja-putih::before {
     content: '\2654';
-    font-size: 44px;
 }
